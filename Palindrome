@@ -1,20 +1,39 @@
-public class PalindromeTest {
+import java.util.Scanner;
 
-   
-    public static void main(String args[]) {
-        System.out.println("Is aaa palindrom?: " + isPalindromString("aaa"));
-        System.out.println("Is abc palindrom?: " + isPalindromString("abc"));
-       
-        System.out.println("Is bbbb palindrom?: " + isPalindromString("bbbb"));
-        System.out.println("Is defg palindrom?: " + isPalindromString("defg"));
-     
-       
-    }
-    public static boolean isPalindromString(String text){
-       String reverse = reverse(text);
-       if(text.equals(reverse)){
-           return true;
-       }
-     
-       return false;
-    }
+	 
+
+	public class Palindrome {
+
+	    public static void main (String[] args) {
+
+	        String original, reverse = "";
+	        Scanner in = new Scanner(System.in);
+
+	        int length;
+
+	        System.out.println("Enter the number or String");
+
+	        original = in.nextLine();
+
+	        length = original.length();
+
+	        for (int i =length -1; i>=0; i--) {
+
+	            reverse = reverse + original.charAt(i);
+
+	        }
+
+	        System.out.println("reverse is:" +reverse);
+
+	         
+	        if(original.equals(reverse))
+	            System.out.println("The number is palindrome");
+
+	        else
+
+	            System.out.println("The number is not a palindrome");
+
+	       
+	    }
+
+	}
