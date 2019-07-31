@@ -1,3 +1,20 @@
+Table - EmployeeDetails
+EmpId 	FullName 	ManagerId 	DateOfJoining
+121 	John Snow 	321 	01/31/2014
+321 	Walter White 	986 	01/30/2015
+421 	Kuldeep Rana 	876 	27/11/2016
+
+
+Table - EmployeeSalary
+EmpId 	Project 	Salary
+121 	P1 	8000
+321 	P2 	1000
+421 	P1 	12000
+
+
+
+
+
 Ques.1. Write a SQL query to fetch the count of employees working in project 'P1'.
 Ans. Here, we would be using aggregate function count() with the SQL where clause-
 
